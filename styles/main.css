@@ -1,0 +1,20 @@
+#main-container{
+    background-color:rgb(70, 83, 83);
+}
+#page-header{
+    color: white;
+}
+#column-a{
+    background-color:rgb(155, 190, 190);
+}
+#column-b{
+    background-color:rgb(221, 238, 238);
+}
+#profile-pic{
+    max-width: 250px;
+    max-height: 250px;
+    padding-top: 10px;
+}
+#profile-name{
+    clear: both;
+}
