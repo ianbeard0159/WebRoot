@@ -1,3 +1,8 @@
+
+body{
+    font-family: Helvetica, sans-serif;
+    height: 500px;
+}
 #main-container{
     background-color:rgb(70, 83, 83);
 }
@@ -8,6 +13,9 @@
     background-color:rgb(155, 190, 190);
 }
 #column-b{
+    display: flex;
+    flex-flow: column nowrap;
+
     background-color:rgb(221, 238, 238);
 }
 #profile-pic{
@@ -17,4 +25,61 @@
 }
 #profile-name{
     clear: both;
+}
+
+/*  Resource Page  */
+.resource-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    padding: 6px 0px;
+
+    background-color:rgb(221, 238, 238);
+}
+.resource-box{
+    display: flex;
+    flex-direction: column;
+    
+    width: 500px;
+    height: min-content;
+    margin: 6px;
+
+    background-color:rgb(155, 190, 190);
+    border-radius: 4px 12px 12px 12px;
+}
+.resource-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 12px;
+
+    background-color:rgb(70, 83, 83);
+    color: white;
+    border-radius: 4px 12px 0px 0px;
+}
+.resource-header a, .resource-header p{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+    margin: 0px;
+
+    color: white;
+}
+.resource-header .score{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+.resource-header a:hover{
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.747), 2px 2px 4px rgba(0, 0, 0, 0.747);
+}
+.resource-box .content{
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 8px;
 }
